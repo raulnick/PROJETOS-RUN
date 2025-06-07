@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Chamados</title>
+</head>
+<body>
+    <h1>Lista de Chamados</h1>
+    <a href="/novo">Abrir novo chamado</a>
+    <ul>
+        {% for chamado in chamados %}
+        <li>
+            <a href="/chamado/{{ chamado[0] }}">
+                [{{ chamado[4] }}] {{ chamado[1] }} - {{ chamado[3] }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
