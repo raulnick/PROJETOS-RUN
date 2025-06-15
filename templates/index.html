@@ -4,6 +4,15 @@
     <title>Lista de Chamados</title>
 </head>
 <body>
+    <h1>Chamados</h1>
+     <a href="{{ url_for('login') }}">
+    <button type="button">Ir para Login</button>
+  </a>
+
+
+    <p>Usuário logado: {{ usuario }}</p>
+    <a href="/logout">Sair</a>
+
     <h1>Lista de Chamados</h1>
     <a href="/novo">Abrir novo chamado</a>
     <ul>
